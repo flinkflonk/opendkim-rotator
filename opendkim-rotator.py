@@ -3,7 +3,19 @@
 # OpenDKIM key rotator
 # (c) 2017 Michael Hinz (@flinkflonk)
 
+# predefined paths:
+# /etc/opendkim.conf - configuration file for OpenDKIM
+#   all info on other files comes from this configuration file,
+#   so make sure it exists and is valid. Getting OpenDKIM running
+#   is not part of the instructions for opendkim-rotator.
+# /var/cache/opendkim-rotator - path where the database resides
+
 # parse command line options
+# -t: test - setup test paths for opendkim and DB directories
+# -d: DNS-backend
+#   "nsd": nsd
+#   "bind": bind
+#   "txt": instructions in text format for manual configuration
 # read config file
 # read keyfile
 # for each domain in file:
