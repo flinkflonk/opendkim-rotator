@@ -21,3 +21,13 @@ out to all DNS caches yet. Also, old key deletion should be delayed
 until any emails signed with them should have been received.
 
 Michael Hinz, 2017-01-10
+
+A working version is running at my work since 2019 and rotating
+DKIM keypairs for roughly 3800 domains every three months. I'm
+working on a new version, which is both more generic (therefore
+open-sourcable - the running version is very specific to our DNS
+and SMTP server installation) and more user-friendly (not just a
+script, but a full DJango-App providing both an administration
+interface and monitoring).
+
+Michael Hinz, 2022-06-12
